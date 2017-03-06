@@ -4,7 +4,8 @@ This is a web app that will find out what the best exchanges would be to convert
 #### Endpoints:
 
 - For example, a GET request to the path `/` returns the following JSON:
-```{
+```javascript
+{
   optimalExchangeRates: [
     {
       dataSource: "Poloniex",
