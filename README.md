@@ -1,7 +1,7 @@
 #### The App:
 This is a web app that will find out what the best exchanges would be to convert bitcoin to other digital currencies such as Ethereum, Litecoin, and DASH. It returns the best rates possible based on the exchange API used.
 
-This app is currently deployed on Heroku:[Digital Currency Converter](https://digital-currency-exchanger.herokuapp.com/)
+This app is currently deployed on Heroku: [Digital Currency Converter](https://digital-currency-exchanger.herokuapp.com/)
 
 #### Features I'd like to Add:
  - Add an endpoint that takes params to convert for any currency to any other currency. The app currently has hardcoded constants for the currencies (see the `lib/constants.js` file).
