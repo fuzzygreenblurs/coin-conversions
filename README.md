@@ -9,6 +9,27 @@ This app is currently deployed on Heroku: [Digital Currency Converter](https://d
 
 #### Endpoints:
 
+- GET request to the path `/:api/:currency/optimal_exchange_rate` returns JSON with processed data for the exchange rate for a specified `currency` to BTC from a specified `API`.
+```javascript
+{
+  dataSource:"bittrex",
+  data: [
+    {
+      dataSource:"bittrex",
+      currency:"ltc",
+      averageExchangeRate:306.96,
+      highestExchangeRate:311.51,
+      lowestExchangeRate:298.06,
+      latestExchangeRate:
+        {
+          exchangeRate:308.99,
+          timeStamp:"2017-03-10T04:16:17.683Z"
+        }
+    }
+  ]
+}
+```
+
 - GET request to the path `/optimal_exchange_rates` returns JSON with the best (sorted by API) exchange rates for the above currencies to BTC:
 ```javascript
 {
